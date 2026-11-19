@@ -5,15 +5,14 @@
   background-repeat: no-repeat;
 
   &__content {
-    height: 100vh;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
 
-  @include on-tablet {
-    background-position: center;
-    background-size: cover;
+    @include on-tablet {
+      height: 100vh;
+    }
   }
 
   &__title {
