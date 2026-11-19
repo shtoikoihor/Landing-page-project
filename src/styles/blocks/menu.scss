@@ -18,7 +18,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 27px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   &__book-a-test-ride {
@@ -37,7 +37,7 @@
   &__top {
     margin-bottom: 24px;
 
-    @include onTablet {
+    @include on-tablet {
       margin: 0;
     }
   }

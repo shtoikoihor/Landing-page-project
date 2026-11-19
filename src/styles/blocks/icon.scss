@@ -6,7 +6,7 @@
 
   @include hover(transform, scale(1.05));
 
-  @include onTablet {
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
@@ -15,14 +15,14 @@
     background-image: url(../images/icons/icon-phone.svg);
     position: relative;
 
-    @include onDesktop {
+    @include on-desktop {
       &::before {
         content: '+1 234 5555-55-55';
         position: absolute;
         top: 10px;
         width: max-content;
         height: 16px;
-        color: #ffffff;
+        color: #fff;
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;

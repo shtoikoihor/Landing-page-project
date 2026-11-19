@@ -1,5 +1,5 @@
 .footer {
-  background-image: url(/src/images/background/footer-background.png);
+  background-image: url(../images/background/footer-background.png);
   position: sticky;
   bottom: 0;
   z-index: -1;
@@ -8,11 +8,11 @@
   background-repeat: no-repeat;
   height: 200px;
 
-  @include onTablet {
+  @include on-tablet {
     height: 480px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     height: 555px;
   }
 }

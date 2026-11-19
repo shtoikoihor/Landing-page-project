@@ -8,23 +8,23 @@
   letter-spacing: -1.5px;
   text-align: center;
 
-  @include onTablet {
+  @include on-tablet {
     font-size: $fs-title-tablet;
     line-height: $lh-title;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     font-size: $fs-title-desktop;
     line-height: $lh-title;
   }
 
   &__details {
-    @include onTablet {
+    @include on-tablet {
       margin: 0;
       margin-bottom: 64px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       margin: 0;
       margin-bottom: 48px;
     }

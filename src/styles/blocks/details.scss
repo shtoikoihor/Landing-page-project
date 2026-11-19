@@ -5,14 +5,15 @@
     display: grid;
     row-gap: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 48px;
     }
   }
 
   .detail {
     &__photos {
-      @include pageGrid;
+      @include page-grid;
+
       margin-bottom: 16px;
     }
 
@@ -30,21 +31,21 @@
 
     &__link {
       &--wide {
-        @include onTablet {
+        @include on-tablet {
           grid-column: span 4;
         }
 
-        @include onDesktop {
+        @include on-desktop {
           grid-column: span 8;
         }
       }
 
       &--square {
-        @include onTablet {
+        @include on-tablet {
           grid-column: span 2;
         }
 
-        @include onDesktop {
+        @include on-desktop {
           grid-column: span 4;
         }
       }
@@ -54,7 +55,7 @@
       font-weight: 700;
       font-size: 24px;
       line-height: 140%;
-      letter-spacing: 0px;
+      letter-spacing: 0;
       margin: 0;
       padding-bottom: 8px;
       grid-column: 1 / -1;
@@ -64,16 +65,17 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
-      letter-spacing: 0px;
+      letter-spacing: 0;
       margin: 0;
       grid-column: 1 / -1;
-      @include onDesktop {
+
+      @include on-desktop {
         grid-column: span 8;
       }
     }
 
     &__description-wrapper {
-      @include pageGrid;
+      @include page-grid;
     }
   }
 }
